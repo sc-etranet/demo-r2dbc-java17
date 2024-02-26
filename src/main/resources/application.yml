@@ -1,0 +1,18 @@
+micronaut:
+  application:
+    name: demo-r2dbc-java17
+datasources:
+  default:
+    driver-class-name: org.postgresql.Driver
+    dialect: POSTGRES
+    db-type: postgresql
+r2dbc:
+  datasources:
+    default:
+      dialect: POSTGRES
+      db-type: postgresql
+      driver: postgresql
+flyway:
+  datasources:
+    default:
+      enabled: true
